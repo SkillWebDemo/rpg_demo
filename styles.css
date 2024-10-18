@@ -26,6 +26,5 @@ body {
 }
 
 .player {
-    background-color: #f00;
-    background-image: url();
+    background-color: red;
 }

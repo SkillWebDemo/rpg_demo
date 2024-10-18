@@ -11,12 +11,13 @@ for (let y = 0; y < gridSize; y++) {
         gameBoard.appendChild(cell);
     }
 }
-
+const playerHTML = <img
 // Place the player
 const updatePlayerPosition = () => {
     document.querySelectorAll('.cell').forEach(cell => cell.classList.remove('player'));
     const playerCell = document.getElementById(`cell-${playerPosition.x}-${playerPosition.y}`);
     playerCell.classList.add('player');
+    playerCell.appendChild(playerHTML); 
 };
 
 updatePlayerPosition();
