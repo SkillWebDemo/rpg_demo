@@ -26,8 +26,7 @@ body {
 }
 
 .player {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    background-image: url(./images/heroes/Orctaskmaster.png);
+    background-size: cover;
 }
 

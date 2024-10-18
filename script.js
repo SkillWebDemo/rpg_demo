@@ -1,10 +1,8 @@
 const gameBoard = document.getElementById('game-board');
 const gridSize = 4;
-pimg = document.createElement('img')
-pimg.setAttribute('src', './images/heroes/Orctaskmaster.png');
-pimg.setAttribute('alt', 'brute');
-pimg.setAttribute('height', '1px');
-pimg.setAttribute('width', '1px');
+
+
+
 
 let playerPosition = { x: 0, y: 0 };
 
@@ -19,15 +17,12 @@ for (let y = 0; y < gridSize; y++) {
 }
 
 
-
 // Place the player
 function updatePlayerPosition() {
     document.querySelectorAll('.cell').forEach(cell => cell.classList.remove('player'));
     //document.querySelectorAll('.cell').forEach(cell => cell.removeChild(insertPlayer));
     var playerCell = document.getElementById(`cell-${playerPosition.x}-${playerPosition.y}`);
-    //playerCell.appendChild(pimg);
     playerCell.classList.add('player');    
-    
 };
 
 
